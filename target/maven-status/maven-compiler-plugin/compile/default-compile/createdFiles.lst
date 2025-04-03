@@ -1,0 +1,4 @@
+com\example\gateway\api\resources\ClientCommandController.class
+com\example\gateway\command\CommandSender.class
+com\example\gateway\ApiGatewayApplication.class
+com\example\gateway\command\CreateClientCommand.class

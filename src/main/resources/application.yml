@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: bff
+          uri: http://localhost:9092
+          predicates:
+            - Path=/api/**
+          filters:
+            - StripPrefix=1
+
+  main:
+    allow-bean-definition-overriding: 'true'
