@@ -19,6 +19,6 @@ public class ClientCommandController {
     @PostMapping
     public ResponseEntity<String> criar(@RequestBody CreateClientCommand command) {
         sender.sendCommand(command);
-        return ResponseEntity.ok("Comando enviado com sucesso via RabbitMQ!");
+        return ResponseEntity.ok("Comando enviado com sucesso via RabbitMQ para testes!");
     }
 }
